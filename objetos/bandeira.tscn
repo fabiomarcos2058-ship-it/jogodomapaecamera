@@ -1,0 +1,35 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://objetos/bandeira.gd" id="1_wds7j"]
+[ext_resource type="Texture2D" path="res://arte/tilemap_packed.png" id="2_qw8p8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv6kv"]
+atlas = ExtResource("2_qw8p8")
+region = Rect2(256, 48, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b3fpb"]
+size = Vector2(10, 12)
+
+[node name="Bandeira" type="Area2D" unique_id=157087321]
+script = ExtResource("1_wds7j")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=635182979]
+texture = SubResource("AtlasTexture_jv6kv")
+
+[node name="Area" type="CollisionShape2D" parent="." unique_id=397412848]
+shape = SubResource("RectangleShape2D_b3fpb")
+
+[node name="Vitoria" type="CanvasLayer" parent="." unique_id=678830481]
+visible = false
+
+[node name="Mensagem" type="Label" parent="Vitoria" unique_id=390342682]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Você encontrou a bandeira!"
+horizontal_alignment = 1
+vertical_alignment = 1

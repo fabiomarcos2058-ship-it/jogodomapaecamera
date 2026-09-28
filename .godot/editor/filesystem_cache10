@@ -1,0 +1,14 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790622806
+icon.svg::CompressedTexture2D::8692998120382009931::1790622803::1790622808::1::::<><><>0<>0<>3c68c568376eee05cd227e9e151017bb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+jogo.tscn::PackedScene::-1::1790622803::0::1::::<><><>0<>0<><>::res://arte/tileset.tres<>res://jogador/player.tscn<>res://jogador/player.gd<>res://objetos/bandeira.tscn<>res://objetos/bandeira.gd
+LEIAME.txt::TextFile::-1::1790622803::0::1::::<><><>0<>0<><>::
+::res://arte/::1790622803
+tilemap_packed.png::CompressedTexture2D::3515840755173869043::1790622803::1790622808::1::::<><><>0<>0<>c8a50d6992b4800dd191dd54e1ace3f1<>res://.godot/imported/tilemap_packed.png-6e855f446850ed79fa3c1cbe4d9f4291.ctex::
+tileset.tres::TileSet::-1::1790622803::0::1::::<><><>0<>0<><>::res://arte/tilemap_packed.png
+::res://jogador/::1790622803
+player.gd::GDScript::3786492938584387022::1790622803::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::-1::1790622803::0::1::::<><><>0<>0<><>::res://jogador/player.gd<>res://arte/tilemap_packed.png
+::res://objetos/::1790622803
+bandeira.gd::GDScript::275569141753763643::1790622803::0::1::::<>Area2D<><>0<>0<><>::
+bandeira.tscn::PackedScene::-1::1790622803::0::1::::<><><>0<>0<><>::res://objetos/bandeira.gd<>res://arte/tilemap_packed.png

@@ -1,0 +1,4 @@
+Tutorial 06 - Mapa e Camera (Godot 4.7.2)
+Abra o Godot, clique em "Importar" e selecione o arquivo project.godot desta pasta. Aperte F5 para jogar.
+Setas do teclado: mover. Encostar em arvore, predio, carro ou agua reinicia a fase. Encontre a bandeira (canto inferior direito).
+Arte: Tiny Battle, de Kenney (kenney.nl) - dominio publico (CC0).

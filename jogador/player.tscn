@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://jogador/player.gd" id="1_xyfqy"]
+[ext_resource type="Texture2D" path="res://arte/tilemap_packed.png" id="2_1e5cy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo1km"]
+atlas = ExtResource("2_1e5cy")
+region = Rect2(256, 128, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fydji"]
+atlas = ExtResource("2_1e5cy")
+region = Rect2(272, 128, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efxqp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo1km")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo1km")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fydji")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gq4ev"]
+size = Vector2(10, 12)
+
+[node name="Player" type="CharacterBody2D" unique_id=1696325058]
+script = ExtResource("1_xyfqy")
+
+[node name="Animação" type="AnimatedSprite2D" parent="." unique_id=1670384313]
+sprite_frames = SubResource("SpriteFrames_efxqp")
+animation = &"idle"
+
+[node name="Corpo" type="CollisionShape2D" parent="." unique_id=1229403852]
+shape = SubResource("RectangleShape2D_gq4ev")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1373674819]
+limit_left = 0
+limit_top = 0
+limit_right = 608
+limit_bottom = 304
